@@ -1,0 +1,10 @@
+name: 'Lumberjack Accessibility Check'
+description: 'Scans a url for using lumberjack to assess accessibility'
+inputs:
+  url:
+    description: 'Website url to scan'
+    required: true
+runs:
+  using: 'node12'
+  main: index.js 
+  # args: ['--url', '${{ inputs.url }}']  
